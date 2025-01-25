@@ -1,0 +1,98 @@
+:root {
+  --primary-color: #e7692f;
+  --card-color: #1f1f24;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #4daf54, #3d8880);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--card-color);
+  width: 380px;
+  height: 500px;
+  border-radius: 15px;
+  color: white;
+  font-size: 25px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.avatar {
+  margin: 25px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid var(--primary-color);
+  overflow: hidden;
+
+  transition: 0.3s;
+  transition-delay: 0.1s;
+}
+
+.avatar img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.name,
+.position,
+.icon,
+.contact {
+  margin-top: 10px;
+}
+.name {
+  font-weight: bold;
+}
+.position {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+.icon {
+  text-align: center;
+  gap: 130px;
+  margin: 40px;
+  cursor: pointer;
+}
+.icon a i {
+  margin: 0 20px;
+}
+
+.icon a {
+  color: white;
+  text-decoration: none;
+}
+.icon a i:hover {
+  color: var(--primary-color);
+}
+.contact button {
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  width: 150px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact button:hover {
+  background-color: var(--primary-color);
+}
+.avatar:hover {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border: unset;
+
+  margin: 0 auto;
+}
