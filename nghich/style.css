@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: rgb(255, 106, 122);
+  background: linear-gradient(
+    150deg,
+    rgba(255, 106, 122, 1) 11%,
+    rgba(255, 162, 168, 1) 40%,
+    rgba(232, 142, 247, 1) 64%,
+    rgba(196, 42, 251, 1) 86%
+  );
+  overflow: hidden;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 15px;
+  position: absolute;
+}
+
+.thuong-btn {
+  top: 18%;
+  left: 23%;
+  border: 2px solid rgb(245, 0, 73);
+  background: #ff6687;
+}
+.thuong-btn:hover {
+  background: #ff8da5;
+}
+.product-btn {
+  bottom: 18%;
+  right: 23%;
+  border: 2px solid rgb(94, 0, 201);
+  background: #cc74ff;
+}
+.product-btn:hover {
+  background: #d295f5;
+}
+img {
+  width: 10vw;
+  height: 10vw;
+  position: absolute;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: 0.5s;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+#thuong1 {
+  top: 100%;
+  left: 3%;
+  opacity: 0;
+}
+.thuong-btn:hover ~ #thuong1 {
+  top: 12%;
+  left: 3%;
+  opacity: 1;
+}
+#thuong2 {
+  top: 100%;
+  left: 50%;
+  opacity: 0;
+}
+.thuong-btn:hover ~ #thuong2 {
+  top: 5%;
+  left: 50%;
+  opacity: 1;
+}
+#thuong3 {
+  top: 100%;
+  left: 30%;
+  opacity: 0;
+}
+.thuong-btn:hover ~ #thuong3 {
+  top: 40%;
+  left: 30%;
+  opacity: 1;
+}
+#thuong4 {
+  top: 100%;
+  left: 20%;
+  opacity: 0;
+}
+.thuong-btn:hover ~ #thuong4 {
+  top: 70%;
+  left: 20%;
+  opacity: 1;
+}
+#thuong5 {
+  top: 100%;
+  left: 75%;
+  opacity: 0;
+}
+.thuong-btn:hover ~ #thuong5 {
+  top: 25%;
+  left: 75%;
+  opacity: 1;
+}
+#product1 {
+  bottom: 100%;
+  right: 3%;
+  opacity: 0;
+}
+.product-btn:hover ~ #product1 {
+  bottom: 12%;
+  right: 3%;
+  opacity: 1;
+}
+#product2 {
+  bottom: 100%;
+  right: 50%;
+  opacity: 0;
+}
+.product-btn:hover ~ #product2 {
+  bottom: 5%;
+  right: 50%;
+  opacity: 1;
+}
+#product3 {
+  bottom: 100%;
+  right: 30%;
+  opacity: 0;
+}
+.product-btn:hover ~ #product3 {
+  bottom: 40%;
+  right: 30%;
+  opacity: 1;
+}
+#product4 {
+  bottom: 100%;
+  right: 20%;
+  opacity: 0;
+}
+.product-btn:hover ~ #product4 {
+  bottom: 70%;
+  opacity: 1;
+}
+
+.toProduct {
+  transform: translateY(100vh);
+}
